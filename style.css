@@ -1,0 +1,63 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+header
+{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+header h2
+{
+    margin: 15px;
+    font-family: 'HarryPotter', sans-serif;
+    font-size: 70px;
+    color: #7c7c7c;
+    -webkit-text-stroke: 0.1px black;
+}
+
+@font-face
+{
+    font-family: 'HarryPotter';
+    src: url('fonts/HARRYP__.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.cards
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    border: 2px solid greenyellow;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(220, 249, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.fotos
+{
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+}
