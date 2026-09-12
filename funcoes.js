@@ -12,8 +12,9 @@ async function gerarCards()
     const container = document.getElementById('container');
     for (let i=0; i<elementos.length; i++)
     {
-        let card = document.createElement('div');
+        let card = document.createElement('a');
         card.classList.add('cards');
+        card.href = `informacoes.html?id=${elementos[i].id}`
         let imagem = document.createElement('div');
         imagem.classList.add('fotos');
         if (elementos[i].image != "")
