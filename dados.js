@@ -68,16 +68,13 @@ async function carregarDados()
             dados.innerHTML += `, Comprimento: ${elementos.wand.length}"`;
         }
         dados.innerHTML += "<br>";
-        if (elementos.alive != "")
+        if (elementos.alive)
         {
-            if (elementos.alive)
-            {
-                dados.innerHTML += `Está vivo(a) <br>`;
-            }
-            else
-            {
-                dados.innerHTML += 'Não está vivo<br>';
-            }
+            dados.innerHTML += `Está vivo(a) <br>`;
+        }
+        else
+        {
+            dados.innerHTML += 'Não está vivo<br>';
         }
         if (elementos.hogwartsStudent)
         {
